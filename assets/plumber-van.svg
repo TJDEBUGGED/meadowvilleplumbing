@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%">
+    <!-- Van Body Top -->
+    <path d="M 30 40 L 150 40 C 160 40 170 50 175 60 L 180 80 L 20 80 L 20 50 C 20 45 25 40 30 40 Z" fill="#FFFFFF" />
+    <!-- Van Body Bottom -->
+    <rect x="20" y="70" width="160" height="20" fill="#F4F6F8" />
+    <rect x="20" y="85" width="160" height="5" fill="#00BFFF" />
+    <!-- Window -->
+    <path d="M 120 45 L 145 45 C 150 45 155 50 160 55 L 165 70 L 120 70 Z" fill="#3E4349" />
+    <!-- M Logo on side -->
+    <path d="M 60 70 L 60 50 L 75 65 L 90 50 L 90 70" fill="none" stroke="#3E4349" stroke-width="4" stroke-linejoin="round" />
+    <circle cx="75" cy="42" r="4" fill="#00BFFF" />
+    <!-- Wheels -->
+    <circle cx="50" cy="90" r="12" fill="#2C3035" />
+    <circle cx="50" cy="90" r="6" fill="#A9A9A9" />
+    <circle cx="150" cy="90" r="12" fill="#2C3035" />
+    <circle cx="150" cy="90" r="6" fill="#A9A9A9" />
+    
+    <!-- Ladder on top -->
+    <rect x="30" y="30" width="100" height="6" fill="#A9A9A9" />
+    <rect x="40" y="28" width="80" height="2" fill="#D3D3D3" />
+</svg>

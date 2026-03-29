@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadowvale Plumbing & Mechanical | Commercial Plumbing Contractor</title>
+    <meta name="description" content="Mississauga-based commercial plumbing contractor providing reliable, code-compliant services to general contractors, property managers, and commercial building owners across the GTA.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Water Drip Loader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="drip-container">
+            <div class="water-drop"></div>
+            <div class="m-logo-loader">
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                    <path d="M20,80 L20,40 L40,65 L60,40 L80,80" fill="none" stroke="#00BFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" class="m-path" />
+                    <circle cx="50" cy="20" r="10" fill="#00BFFF" class="water-drop-logo" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link">
+                <!-- Using a simple flex layout for the logo to avoid external images right now, we can update it later if needed -->
+                <div class="logo-mark">
+                    <svg viewBox="0 0 100 80" width="40" height="32">
+                        <circle cx="50" cy="25" r="12" fill="#00BFFF" />
+                        <path d="M15,75 V35 L50,65 L85,35 V75" fill="none" stroke="#3E4349" stroke-width="12" stroke-linejoin="round" />
+                    </svg>
+                    <span class="logo-text">MEADOWVALE</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#service-area">Service Area</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="tel:416-602-3009" class="btn btn-nav"><i data-lucide="phone" class="icon-sm"></i> 416-602-3009</a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Animated Plumber & Pipe (Desktop Only mostly) -->
+    <aside class="side-plumber-container">
+        <div class="vertical-pipe-track">
+            <div class="vertical-pipe-fill"></div>
+        </div>
+        <div class="plumber-traveler" id="plumber-traveler">
+            <div class="plumber-character" id="main-plumber">
+                <!-- SVG placeholder for the plumber -->
+                <img src="assets/plumber.svg" alt="Animated Plumber" class="plumber-svg">
+                <div class="plumber-accessory" id="plumber-wrench"><img src="assets/wrench.svg" alt="Wrench"></div>
+                <div class="plumber-accessory hidden" id="plumber-clipboard"><i data-lucide="clipboard-check"></i></div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-grid"></div>
+        <div class="floating-particles" id="hero-particles"></div>
+        <div class="container hero-content">
+            <div class="hero-text-block">
+                <div class="hero-logo-full">
+                    <svg viewBox="0 0 300 100" width="240" height="80" class="hero-svg-logo">
+                        <!-- Simplified full logo -->
+                        <g transform="translate(10, 20)">
+                            <circle cx="25" cy="-5" r="10" fill="#00BFFF" />
+                            <path d="M0,50 V10 L25,40 L50,10 V50" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" />
+                        </g>
+                        <text x="80" y="35" font-family="'Montserrat', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF">MEADOWVALE</text>
+                        <text x="85" y="60" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#00BFFF" letter-spacing="2">PLUMBING & MECHANICAL</text>
+                    </svg>
+                </div>
+                <h1>Commercial Plumbing You Can Count On</h1>
+                <h2>Licensed. Red Seal Certified. Inspection-Ready.</h2>
+                <p class="tagline">Serving the Greater Toronto Area's Commercial Construction Industry</p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-primary btn-large ripple-effect">Get a Quote</a>
+                    <a href="tel:416-602-3009" class="btn btn-outline btn-large">Call Now: 416-602-3009</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-transition-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C320,120 420,-20 740,50 C1060,120 1200,-20 1440,50 L1440,100 L0,100 Z" fill="#FFFFFF"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <div class="header-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <p class="lead">Meadowvale Plumbing & Mechanical is a Mississauga-based commercial plumbing contractor providing reliable, code-compliant plumbing services to general contractors, property managers, and commercial building owners across the Greater Toronto Area.</p>
+                    <p>We specialize in small to mid-size commercial construction, tenant fit-ups, renovations, and plumbing service work.</p>
+                    <p>As an owner-operated business led by a Red Seal–certified plumber with extensive commercial construction experience, we offer hands-on workmanship, clear communication, and dependable scheduling on every project.</p>
+                    
+                    <div class="qualifications-row">
+                        <div class="qual-badge staggered-reveal"><i data-lucide="award" class="qual-icon red"></i> Red Seal Certified</div>
+                        <div class="qual-badge staggered-reveal"><i data-lucide="shield-check" class="qual-icon green"></i> Backflow Prevention</div>
+                        <div class="qual-badge staggered-reveal"><i data-lucide="file-check-2" class="qual-icon blue"></i> Ontario Plumbing Code</div>
+                        <div class="qual-badge staggered-reveal"><i data-lucide="shield" class="qual-icon yellow"></i> Fully Insured</div>
+                        <div class="qual-badge staggered-reveal"><i data-lucide="hard-hat" class="qual-icon orange"></i> WSIB Registered</div>
+                    </div>
+                </div>
+                <div class="about-visual scroll-reveal right">
+                    <!-- Mobile inline plumber or dynamic visual -->
+                    <div class="mobile-plumber-inline">
+                        <img src="assets/plumber.svg" alt="Plumber Working" class="inline-svg-char">
+                    </div>
+                    <div class="pipes-illustration">
+                        <img src="assets/pipes-assembly.svg" alt="Pipe Assembly" class="bg-illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,0 C400,80 600,-20 900,50 C1200,120 1300,20 1440,100 L1440,100 L0,100 Z" fill="#F4F6F8"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2>What We Do</h2>
+                <div class="header-underline mx-auto"></div>
+            </div>
+            
+            <div class="services-grid" id="services-grid">
+                <!-- Connective background pipes rendered here via JS/CSS -->
+                <svg class="services-connective-pipes" preserveAspectRatio="none">
+                    <!-- Paths drawn dynamically based on cards -->
+                </svg>
+
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="wrench"></i></div>
+                    <h3>Commercial Plumbing Installations</h3>
+                    <p>Full-scale plumbing rough-ins and finishing for commercial properties.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="building-2"></i></div>
+                    <h3>Tenant Fit-Ups & Renovations</h3>
+                    <p>Custom plumbing solutions for new tenant spaces and structural renovations.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="bath"></i></div>
+                    <h3>Washroom & Common Area</h3>
+                    <p>Commercial fixtures, multi-stall washroom builds, and ADA-compliant upgrades.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="network"></i></div>
+                    <h3>Water, Drain & Vent Systems</h3>
+                    <p>Complete DWV and domestic water distribution system installations.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="refresh-ccw"></i></div>
+                    <h3>Backflow Preventers</h3>
+                    <p>Certified testing, repair, and installation for DCVA, RPZ, and Double Check assemblies.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="flame"></i></div>
+                    <h3>Commercial Water Heaters</h3>
+                    <p>Installation and servicing of heavy-duty boilers and water heating systems.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="hammer"></i></div>
+                    <h3>Base Building Modifications</h3>
+                    <p>Core drilling, pipe re-routing, and major structural plumbing modifications.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="zap"></i></div>
+                    <h3>Emergency Service & Repairs</h3>
+                    <p>Rapid response for commercial plumbing failures and urgent repairs.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="srv-icon"><i data-lucide="key"></i></div>
+                    <h3>Make-Ready & Unit Turnover</h3>
+                    <p>Turnover plumbing prep, deficiency corrections, and as-built drafting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Where We Work</h2>
+                <div class="header-underline"></div>
+            </div>
+            
+            <div class="experience-carousel">
+                <div class="exp-card highlight-hover">
+                    <i data-lucide="store" class="exp-icon"></i>
+                    <h4>Retail & Strip Plaza Units</h4>
+                </div>
+                <div class="exp-card highlight-hover">
+                    <i data-lucide="briefcase" class="exp-icon"></i>
+                    <h4>Office & Professional Spaces</h4>
+                </div>
+                <div class="exp-card highlight-hover">
+                    <i data-lucide="stethoscope" class="exp-icon"></i>
+                    <h4>Medical & Dental Clinics</h4>
+                </div>
+                <div class="exp-card highlight-hover">
+                    <i data-lucide="utensils" class="exp-icon"></i>
+                    <h4>Restaurant & Food Service</h4>
+                </div>
+                <div class="exp-card highlight-hover">
+                    <i data-lucide="warehouse" class="exp-icon"></i>
+                    <h4>Industrial & Warehouse</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section id="service-area" class="service-area-section">
+        <div class="container">
+            <div class="map-grid">
+                <div class="map-text">
+                    <h2 class="text-white">Proudly Serving the West GTA</h2>
+                    <div class="header-underline cyan"></div>
+                    <ul class="cities-list">
+                        <li class="city-item highlighted"><i data-lucide="map-pin"></i> Mississauga (Home Base)</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Etobicoke</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Oakville</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Burlington</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Brampton</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Milton</li>
+                        <li class="city-item"><i data-lucide="map-pin"></i> Vaughan</li>
+                    </ul>
+                </div>
+                <div class="map-visual">
+                    <!-- map SVG mapped via JS or CSS anim -->
+                    <div class="map-wrapper" id="gta-map">
+                        <img src="assets/gta-map.svg" alt="Map of GTA West" class="map-base">
+                        <!-- Pins will be injected/animated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Work Van element moving across this section -->
+        <div class="animated-van-container">
+            <img src="assets/plumber-van.svg" alt="Work Van" id="work-van" class="work-van">
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="why-us-section">
+        <div class="container text-center">
+            <h2 class="dark-text">Why Work With Us</h2>
+            <div class="header-underline dark border-center"></div>
+            
+            <div class="why-grid">
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="contact"></i></div>
+                    <h4>Direct Access</h4>
+                    <p>Speak directly to the licensed plumber on every project.</p>
+                </div>
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="building"></i></div>
+                    <h4>Commercial Experience</h4>
+                    <p>We speak the language of construction. No learning curve.</p>
+                </div>
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="calendar-clock"></i></div>
+                    <h4>Responsive Scheduling</h4>
+                    <p>Clear communication and reliable scheduling logic.</p>
+                </div>
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="check-circle"></i></div>
+                    <h4>Inspection-Ready</h4>
+                    <p>100% Code-compliant work approved by inspectors the first time.</p>
+                </div>
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="settings-2"></i></div>
+                    <h4>Backflow Certified</h4>
+                    <p>One contractor handles installation, testing, and repairs.</p>
+                </div>
+                <div class="why-item stagger-why">
+                    <div class="why-icon-box"><i data-lucide="handshake"></i></div>
+                    <h4>Reliable Support</h4>
+                    <p>Built for GCs and property management relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability & Contact -->
+    <section id="contact" class="availability-contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="availability-block">
+                    <h2>Ready When You Are</h2>
+                    <div class="header-underline"></div>
+                    <ul class="availability-list">
+                        <li><i data-lucide="check" class="check-icon"></i> Tendered and negotiated commercial projects</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Overflow support for general contractors</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Ongoing service and maintenance agreements</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Emergency and short-notice service calls</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-cta-box">
+                    <h3>Let's Talk About Your Next Project</h3>
+                    <p>Reach out directly to discuss timelines and quoting.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:416-602-3009" class="contact-link big-phone ripple-effect">
+                            <i data-lucide="phone-call"></i>
+                            <div>
+                                <span class="label">Call Now</span>
+                                <span class="number">416-602-3009</span>
+                            </div>
+                        </a>
+                        <a href="mailto:admin@meadowvaleplumbingandmechanical.com" class="contact-link email-box">
+                            <i data-lucide="mail"></i>
+                            <span>admin@meadowvaleplumbingandmechanical.com</span>
+                        </a>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault();">
+                        <div class="form-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <input type="tel" placeholder="Phone Number">
+                        <textarea placeholder="Project Description" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo-mark light">
+                    <svg viewBox="0 0 100 80" width="40" height="32">
+                        <circle cx="50" cy="25" r="12" fill="#00BFFF" />
+                        <path d="M15,75 V35 L50,65 L85,35 V75" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
+                    </svg>
+                    <span class="logo-text text-white">MEADOWVALE</span>
+                </div>
+                <p class="footer-desc">Commercial plumbing you can count on.</p>
+                <div class="footer-badges">
+                    <span class="badge" title="Red Seal Certified">Red Seal</span>
+                    <span class="badge" title="WSIB Registered">WSIB</span>
+                    <span class="badge" title="Fully Insured">Insured</span>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#service-area">Service Area</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i data-lucide="phone" class="icon-sm"></i> 416-602-3009</p>
+                <p><i data-lucide="mail" class="icon-sm"></i> admin@meadowvaleplumbingandmechanical.com</p>
+                <p><i data-lucide="map-pin" class="icon-sm"></i> Mississauga, ON (Serving GTA West)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Meadowvale Plumbing & Mechanical. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail">
+        <div class="trail-drop"></div>
+    </div>
+
+    <!-- Mobile Sticky CTA Bottom Bar -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:416-602-3009" class="btn btn-primary btn-block ripple-effect"><i data-lucide="phone"></i> Call Now: 416-602-3009</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
