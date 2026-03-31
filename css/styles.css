@@ -683,6 +683,35 @@ p {
     margin-bottom: 15px;
 }
 
+/* Review CTA Section */
+.review-cta-section {
+    padding: 80px 0;
+    background: var(--primary-dark);
+    color: var(--white);
+    padding-left: 10%;
+}
+.review-stars {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.star-icon {
+    width: 36px;
+    height: 36px;
+    color: #F6E05E;
+    fill: #F6E05E;
+}
+.review-desc {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    font-size: 1.15rem;
+    color: #E2E8F0;
+}
+.mt-4 {
+    margin-top: 20px;
+}
+
 /* Contact / CTA */
 .availability-contact-section {
     padding: 100px 0;
@@ -875,6 +904,7 @@ p {
     .experience-section,
     .service-area-section,
     .why-us-section,
+    .review-cta-section,
     .availability-contact-section,
     .site-footer {
         padding-left: 0;
