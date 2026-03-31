@@ -869,7 +869,6 @@ p {
     .side-plumber-container { display: none; }
     
     /* Reset padding offset */
-    .nav-container,
     .hero-section,
     .about-section,
     .services-section,
@@ -878,7 +877,11 @@ p {
     .why-us-section,
     .availability-contact-section,
     .site-footer {
-        padding-left: 20px;
+        padding-left: 0;
+    }
+
+    .nav-container {
+        padding: 0 20px;
     }
 
     .hero-text-block h1 { font-size: 3rem; }
@@ -941,6 +944,19 @@ p {
     .why-grid,
     .experience-carousel {
         grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-cta-box {
+        padding: 30px 20px;
+    }
+    
+    .hero-section {
+        padding-top: var(--nav-height);
     }
     
     /* Show mobile CTA and add padding to bottom to prevent overlap */
