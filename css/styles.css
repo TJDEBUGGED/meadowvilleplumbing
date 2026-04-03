@@ -819,6 +819,7 @@ p {
     border-radius: 4px;
     color: var(--white);
     font-family: var(--font-body);
+    font-size: 16px; /* 16px min prevents iOS Safari auto-zoom on focus */
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder {
     color: rgba(255,255,255,0.5);
@@ -970,6 +971,12 @@ p {
 }
 
 @media (max-width: 768px) {
+    .hero-form-box {
+        padding: 20px 15px;
+    }
+    .hero-text-block h1 { font-size: 2.2rem; line-height: 1.1; }
+    .hero-text-block h2 { font-size: 1.3rem; }
+    
     .nav-links {
         position: absolute;
         top: var(--nav-height);
@@ -991,8 +998,6 @@ p {
     .nav-cta .btn-nav { display: none; }
     .mobile-menu-btn { display: block; }
     
-    .hero-text-block h1 { font-size: 2.5rem; }
-    .hero-text-block h2 { font-size: 1.5rem; }
     .hero-cta-group { flex-direction: column; }
     
     .services-grid,
