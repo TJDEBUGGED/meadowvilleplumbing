@@ -377,8 +377,9 @@ p {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
+    padding-top: var(--nav-height);
+    padding-bottom: 100px;
     background-color: var(--primary-dark);
     display: flex;
     align-items: center;
@@ -415,6 +416,13 @@ p {
 .hero-content {
     position: relative;
     z-index: 10;
+    width: 100%;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
 }
 .hero-text-block {
     max-width: 800px;
@@ -440,6 +448,22 @@ p {
 }
 .hero-svg-logo {
     margin-bottom: 30px;
+}
+.hero-form-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hero-form-box h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.hero-form-box p {
+    color: #D1D5DB;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
 }
 .hero-transition-wave {
     position: absolute;
@@ -918,7 +942,8 @@ p {
     
     .about-grid,
     .map-grid,
-    .contact-grid {
+    .contact-grid,
+    .hero-grid {
         grid-template-columns: 1fr;
     }
     
@@ -986,7 +1011,8 @@ p {
     }
     
     .hero-section {
-        padding-top: var(--nav-height);
+        padding-top: calc(var(--nav-height) + 20px);
+        padding-bottom: 80px;
     }
     
     /* Show mobile CTA and add padding to bottom to prevent overlap */

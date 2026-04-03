@@ -82,24 +82,39 @@
         <div class="hero-bg-grid"></div>
         <div class="floating-particles" id="hero-particles"></div>
         <div class="container hero-content">
-            <div class="hero-text-block">
-                <div class="hero-logo-full">
-                    <svg viewBox="0 0 300 100" width="240" height="80" class="hero-svg-logo">
-                        <!-- Simplified full logo -->
-                        <g transform="translate(10, 20)">
-                            <circle cx="25" cy="-5" r="10" fill="#00BFFF" />
-                            <path d="M0,50 V10 L25,40 L50,10 V50" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" />
-                        </g>
-                        <text x="80" y="35" font-family="'Montserrat', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF">MEADOWVALE</text>
-                        <text x="85" y="60" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#00BFFF" letter-spacing="2">PLUMBING & MECHANICAL</text>
-                    </svg>
+            <div class="hero-grid">
+                <div class="hero-text-block">
+                    <div class="hero-logo-full">
+                        <svg viewBox="0 0 300 100" width="240" height="80" class="hero-svg-logo">
+                            <!-- Simplified full logo -->
+                            <g transform="translate(10, 20)">
+                                <circle cx="25" cy="-5" r="10" fill="#00BFFF" />
+                                <path d="M0,50 V10 L25,40 L50,10 V50" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" />
+                            </g>
+                            <text x="80" y="35" font-family="'Montserrat', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF">MEADOWVALE</text>
+                            <text x="85" y="60" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#00BFFF" letter-spacing="2">PLUMBING & MECHANICAL</text>
+                        </svg>
+                    </div>
+                    <h1>Commercial Plumbing You Can Count On</h1>
+                    <h2>Licensed. Red Seal Certified. Inspection-Ready.</h2>
+                    <p class="tagline">Serving the Greater Toronto Area's Commercial Construction Industry</p>
+                    <div class="hero-cta-group">
+                        <a href="tel:416-602-3009" class="btn btn-outline btn-large">Call Now: 416-602-3009</a>
+                    </div>
                 </div>
-                <h1>Commercial Plumbing You Can Count On</h1>
-                <h2>Licensed. Red Seal Certified. Inspection-Ready.</h2>
-                <p class="tagline">Serving the Greater Toronto Area's Commercial Construction Industry</p>
-                <div class="hero-cta-group">
-                    <a href="#contact" class="btn btn-primary btn-large ripple-effect">Get a Quote</a>
-                    <a href="tel:416-602-3009" class="btn btn-outline btn-large">Call Now: 416-602-3009</a>
+                
+                <div class="hero-form-box">
+                    <h3>Get a Free Estimate</h3>
+                    <p>Tell us about your project and we'll get back to you shortly.</p>
+                    <form class="contact-form" id="heroForm" onsubmit="event.preventDefault();">
+                        <div class="form-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <input type="tel" placeholder="Phone Number">
+                        <textarea placeholder="Project Description" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Request Estimate</button>
+                    </form>
                 </div>
             </div>
         </div>
