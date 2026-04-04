@@ -121,13 +121,14 @@
                 <div class="hero-form-box">
                     <h3>Get a Free Estimate</h3>
                     <p>Tell us about your project and we'll get back to you shortly.</p>
-                    <form class="contact-form" id="heroForm" onsubmit="event.preventDefault();">
+                    <form class="contact-form" id="heroForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f2e24dd6-5ab5-4351-a1e0-edfab0566274">
                         <div class="form-row">
-                            <input type="text" placeholder="Name" aria-label="Your Name" required>
-                            <input type="email" placeholder="Email" aria-label="Your Email Address" required>
+                            <input type="text" name="name" placeholder="Name" aria-label="Your Name" required>
+                            <input type="email" name="email" placeholder="Email" aria-label="Your Email Address" required>
                         </div>
-                        <input type="tel" placeholder="Phone Number" aria-label="Your Phone Number">
-                        <textarea placeholder="Project Description" aria-label="Project Description" rows="3" required></textarea>
+                        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Your Phone Number">
+                        <textarea name="message" placeholder="Project Description" aria-label="Project Description" rows="3" required></textarea>
                         <button type="submit" class="btn btn-primary btn-block">Request Estimate</button>
                     </form>
                 </div>
@@ -395,13 +396,14 @@
                         </a>
                     </div>
                     
-                    <form class="contact-form" id="contactForm" onsubmit="event.preventDefault();">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f2e24dd6-5ab5-4351-a1e0-edfab0566274">
                         <div class="form-row">
-                            <input type="text" placeholder="Name" aria-label="Your Name" required>
-                            <input type="email" placeholder="Email" aria-label="Your Email Address" required>
+                            <input type="text" name="name" placeholder="Name" aria-label="Your Name" required>
+                            <input type="email" name="email" placeholder="Email" aria-label="Your Email Address" required>
                         </div>
-                        <input type="tel" placeholder="Phone Number" aria-label="Your Phone Number">
-                        <textarea placeholder="Project Description" aria-label="Project Description" rows="3" required></textarea>
+                        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Your Phone Number">
+                        <textarea name="message" placeholder="Project Description" aria-label="Project Description" rows="3" required></textarea>
                         <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                     </form>
                 </div>
