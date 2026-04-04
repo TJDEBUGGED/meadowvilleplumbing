@@ -211,14 +211,14 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: '#about',
             start: 'top center',
             onEnter: () => {
-                wrench.classList.add('hidden');
-                clipboard.classList.remove('hidden');
+                if(wrench) wrench.classList.add('hidden');
+                if(clipboard) clipboard.classList.remove('hidden');
                 // Subtle flip/turn animation
                 gsap.to(plumber, { scaleX: -1, duration: 0.3 }); 
             },
             onLeaveBack: () => {
-                clipboard.classList.add('hidden');
-                wrench.classList.remove('hidden');
+                if(clipboard) clipboard.classList.add('hidden');
+                if(wrench) wrench.classList.remove('hidden');
                 gsap.to(plumber, { scaleX: 1, duration: 0.3 });
             }
         });
@@ -228,11 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: '#services',
             start: 'top center',
             onEnter: () => {
-                clipboard.classList.add('hidden');
-                wrench.classList.remove('hidden');
+                if(clipboard) clipboard.classList.add('hidden');
+                if(wrench) wrench.classList.remove('hidden');
                 gsap.to(plumber, { scaleX: 1, duration: 0.3 });
                 // Twisting wrench animation
-                gsap.to(wrench, { rotation: 45, yoyo: true, repeat: 5, duration: 0.2 });
+                if(wrench) gsap.to(wrench, { rotation: 45, yoyo: true, repeat: 5, duration: 0.2 });
             }
         });
 
